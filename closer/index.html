@@ -1,0 +1,312 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<title>Next Level Systems Closers</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap">
+<style>
+:root{
+  --ground:#07080A; --surface:#0E1114; --surface-2:#141A1F;
+  --line:#1A2026;
+  --text:#F2F5F3; --text-muted:#868F99;
+  --green:#2FD180; --green-hover:#26B96F; --green-ink:#04200F; --green-soft:#0E2518;
+  --blue:#2B3AC0;
+  --error:#F0685C;
+  --display:'DIN_Regular','DIN Next','Barlow','Roboto',Arial,sans-serif;
+  --body:'DIN_Regular','DIN Next','Barlow','Roboto',Arial,sans-serif;
+  --radius:12px; --radius-lg:18px; --radius-pill:99px;
+  --btn-shadow:0 0 0 1px rgba(47,209,128,.25),0 8px 34px rgba(47,209,128,.28);
+}
+:root[data-theme="light"]{
+  --ground:#F4F7F5; --surface:#FFFFFF; --surface-2:#F0F4F1;
+  --line:#DFE6E2;
+  --text:#0B1410; --text-muted:#5A6862;
+  --green:#127A48; --green-hover:#0E6339; --green-ink:#FFFFFF; --green-soft:#E2F2E9;
+  --error:#C0392B;
+  --btn-shadow:0 6px 24px rgba(18,122,72,.22);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--text);font-family:var(--body);font-size:19px;line-height:1.6;letter-spacing:-.005em;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s;padding-bottom:84px}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.015em;line-height:1.1;text-wrap:balance;font-feature-settings:"kern" 1,"liga" 1}
+h1{font-weight:800}h2{font-weight:700}h3{font-weight:600}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+.narrow{max-width:780px;margin:0 auto}
+section{padding:110px 0}
+h2{font-size:clamp(30px,5vw,46px);letter-spacing:-.01em;margin-bottom:16px}
+.lede{font-size:21px;color:var(--text-muted);max-width:34em;font-weight:400}
+.center{text-align:center}.center .lede{margin-left:auto;margin-right:auto}
+.eyebrow{display:inline-block;font-weight:600;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--green);background:var(--green-soft);padding:6px 14px;border-radius:var(--radius-pill);margin-bottom:26px}
+.btn{display:inline-block;font-family:var(--body);font-weight:600;font-size:16px;text-transform:uppercase;letter-spacing:.08em;background:var(--green);color:var(--green-ink);padding:20px 48px;border:none;border-radius:var(--radius);cursor:pointer;text-decoration:none;box-shadow:var(--btn-shadow);transition:background .15s,transform .15s}
+.btn:hover{background:var(--green-hover);transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.btn-sub{display:block;font-size:14.5px;color:var(--text-muted);margin-top:16px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto}}
+
+/* topbar */
+.topbar{padding:16px 0;display:flex;align-items:center;justify-content:center;gap:14px;font-weight:600;letter-spacing:.14em;font-size:12.5px;text-transform:uppercase;color:var(--text-muted);position:relative}
+.topbar .logo{width:26px;height:26px;border-radius:7px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:-.03em}
+.themebtn{position:absolute;right:24px;top:12px;font-family:var(--body);font-weight:600;font-size:12.5px;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-pill);padding:7px 14px;cursor:pointer}
+.themebtn:hover{border-color:var(--green)}
+@media(max-width:640px){.themebtn{display:none}}
+
+/* hero */
+.hero{padding:96px 0 84px;text-align:center;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(700px 380px at 50% -14%,rgba(47,209,128,.07),transparent 72%);pointer-events:none}
+:root[data-theme="light"] .hero::after{background:none}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(34px,5.2vw,56px);font-weight:800;letter-spacing:-.03em;line-height:1.16;max-width:none;margin:0 auto 26px}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero .sub{font-size:clamp(17px,2.1vw,21px);font-weight:400;color:var(--text-muted);line-height:1.6;max-width:33em;margin:0 auto 40px}
+.hero .sub strong{color:var(--text);font-weight:600}
+.video{max-width:900px;margin:0 auto 44px;aspect-ratio:16/9;background:#0B0E11;border:1px solid var(--line);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;cursor:pointer;transition:border-color .15s}
+:root[data-theme="light"] .video{background:var(--surface)}
+.video:hover{border-color:var(--green)}
+.video .play{width:74px;height:74px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 12px rgba(47,209,128,.10)}
+.video p{color:var(--text-muted);font-size:14.5px;font-weight:600}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:56px}
+@media(max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:34px 20px;text-align:center}
+.stat b{display:block;font-family:var(--display);font-weight:700;font-size:32px;letter-spacing:-.01em;font-variant-numeric:tabular-nums;margin-bottom:4px}
+.stat span{font-size:15px;color:var(--text-muted)}
+
+/* point list */
+.pointlist{list-style:none;margin:56px auto 0;display:flex;flex-direction:column;gap:14px;max-width:780px;text-align:left}
+.pointlist li{display:flex;gap:18px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 30px}
+.pointlist .ic{flex:none;width:30px;height:30px;border-radius:var(--radius);background:var(--green-soft);color:var(--green);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-top:2px;font-variant-numeric:tabular-nums}
+.pointlist b{font-family:var(--display);font-weight:600;font-size:19px;letter-spacing:-.005em;display:block}
+.pointlist p{color:var(--text-muted);font-size:16.5px;margin-top:4px}
+
+.quote{max-width:780px;margin:56px auto 0;text-align:center}
+.quote blockquote{font-family:var(--display);font-weight:700;font-size:clamp(23px,3.2vw,32px);line-height:1.28;letter-spacing:-.02em}
+.quote blockquote em{font-style:normal;color:var(--green)}
+
+/* disqualifiers */
+.no-list{list-style:none;margin-top:44px;display:flex;flex-direction:column}
+.no-list li{display:flex;gap:18px;align-items:baseline;padding:22px 2px;border-bottom:1px solid var(--line);font-size:18.5px}
+.no-list li:first-child{border-top:1px solid var(--line)}
+.no-list .x{font-weight:700;color:var(--error);flex:none}
+.no-list span:last-child{color:var(--text-muted)}
+.no-list b{color:var(--text)}
+.bar{margin-top:44px;padding:36px 34px;border-radius:var(--radius-lg);background:var(--green-soft);font-size:18px}
+.bar b{color:var(--green)}
+
+.cta-band{text-align:center;padding:110px 0}
+.cta-band h2{font-size:clamp(32px,5vw,50px)}
+.cta-band .lede{margin:0 auto 40px}
+
+footer{padding:44px 0 60px;text-align:center;color:var(--text-muted);font-size:14px}
+footer a{color:var(--text-muted)}
+
+/* sticky cta */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-top:1px solid var(--line);padding:10px 20px}
+.sticky .wrap{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}
+.sticky span{font-size:15px;font-weight:600;color:var(--text)}
+.sticky .btn{font-size:13.5px;padding:12px 26px;box-shadow:none}
+@media(max-width:520px){.sticky span{display:none}}
+
+/* modal */
+.overlay{position:fixed;inset:0;background:rgba(4,5,7,.86);display:none;align-items:flex-start;justify-content:center;overflow-y:auto;z-index:60;padding:40px 16px}
+.overlay.open{display:flex}
+.modal{background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:var(--radius-lg);max-width:620px;width:100%;padding:52px 44px;position:relative}
+@media(max-width:560px){.modal{padding:32px 22px}}
+.modal h3{font-family:var(--display);font-weight:700;font-size:28px;letter-spacing:-.02em;margin-bottom:6px}
+.modal .mh{color:var(--text-muted);font-size:16px;margin-bottom:22px}
+.modal .close{position:absolute;top:14px;right:14px;background:none;border:none;font-size:26px;cursor:pointer;color:var(--text-muted);line-height:1;padding:6px}
+.progress{height:8px;background:var(--green-soft);border-radius:var(--radius-pill);margin-bottom:10px;overflow:hidden}
+.progress i{display:block;height:100%;width:8%;background:var(--green);border-radius:var(--radius-pill);transition:width .3s}
+.step{display:block;font-size:12.5px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:.12em;margin-bottom:24px}
+.field{margin-bottom:20px}
+.field label{display:block;font-weight:600;font-size:15px;margin-bottom:7px}
+.field .req{color:var(--error)}
+.field input[type=text],.field input[type=tel],.field input[type=email]{width:100%;padding:14px;min-height:48px;border:1.5px solid var(--line);border-radius:var(--radius);font-family:var(--body);font-size:16px;background:var(--ground);color:var(--text)}
+:root[data-theme="light"] .field input[type=text],:root[data-theme="light"] .field input[type=tel],:root[data-theme="light"] .field input[type=email]{background:var(--surface-2)}
+.field input::placeholder{color:var(--text-muted)}
+.field input:focus-visible{outline:none;border-color:var(--green)}
+.radio-row{display:flex;gap:12px}
+.radio-row label{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;border:1.5px solid var(--line);border-radius:var(--radius);padding:13px;min-height:48px;cursor:pointer;font-weight:600;font-size:16px;background:var(--ground);margin:0}
+:root[data-theme="light"] .radio-row label{background:var(--surface-2)}
+.radio-row input{accent-color:var(--green)}
+.radio-row label:has(input:checked){border-color:var(--green);background:var(--green-soft)}
+.money{position:relative}
+.money::before{content:"$";position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-weight:600}
+.money input{padding-left:32px!important}
+.modal .btn{width:100%;text-align:center;margin-top:8px}
+.modal .fine{font-size:13px;color:var(--text-muted);text-align:center;margin-top:14px}
+.success{text-align:center;padding:30px 0;display:none}
+.success h3{margin-bottom:12px}
+</style>
+
+<div class="topbar">
+  <span class="logo">NLS</span>
+  Next Level Systems · Elite Closer Recruitment
+  <button class="themebtn" id="tbtn" onclick="toggleTheme()">☀ Light</button>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Remote · Uncapped commission · Warm inbound only</span>
+    <h1>Now hiring: <em>high-ticket closers</em> for a $5M/year offer that changes lives</h1>
+    <p class="sub">One-call closing, B2C transformation offer, proven track record required. We're a top player in the ADHD-entrepreneur coaching space and our calendars are full of <strong>hot, pre-sold appointments</strong>.</p>
+    <div class="video" onclick="openModal()">
+      <div class="play"><svg width="26" height="26" viewBox="0 0 24 24" fill="var(--green-ink)"><path d="M8 5v14l11-7z"/></svg></div>
+      <p>Watch before you apply · 4 min</p>
+    </div>
+    <a class="btn" href="#" onclick="openModal();return false">Apply Now</a>
+    <span class="btn-sub">2-minute application · Closers with receipts only</span>
+    <div class="stats">
+      <div class="stat"><b>$5M+</b><span>Annual revenue</span></div>
+      <div class="stat"><b>100%</b><span>Warm inbound</span></div>
+      <div class="stat"><b>Uncapped</b><span>Commissions</span></div>
+      <div class="stat"><b>Remote</b><span>Anywhere</span></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap center">
+    <span class="eyebrow">What you'll sell</span>
+    <h2>An offer that's already pre-sold</h2>
+    <p class="lede">We help entrepreneurs with ADHD eliminate distractions and lock in on their business — so they make more money and achieve their dreams.</p>
+    <ul class="pointlist">
+      <li><span class="ic">1</span><span><b>Leads buy before they book</b><p>Prospects purchase a low-ticket product first. They show up pre-sold and ready to be led.</p></span></li>
+      <li><span class="ic">2</span><span><b>The program actually delivers</b><p>Real transformations, real testimonials, real retention. You sell something you're proud of.</p></span></li>
+      <li><span class="ic">3</span><span><b>You just close</b><p>No cold calls. No dead lists. As many warm appointments per day as you can handle.</p></span></li>
+    </ul>
+    <div class="quote"><blockquote>"We unlock the hidden potential of entrepreneurs — so they can <em>achieve their dreams.</em>"</blockquote></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap center">
+    <span class="eyebrow">The opportunity</span>
+    <h2>Everything a great closer wants</h2>
+    <ul class="pointlist">
+      <li><span class="ic">✓</span><span><b>Unlimited earning potential</b><p>Uncapped commissions on a high-ticket transformation offer.</p></span></li>
+      <li><span class="ic">✓</span><span><b>The hottest leads in the market</b><p>Warm, interested, inbound — your calendar fills as fast as you can close it.</p></span></li>
+      <li><span class="ic">✓</span><span><b>Full in-depth training</b><p>The offer, the avatar, the process. Ramp fast, close from week one.</p></span></li>
+      <li><span class="ic">✓</span><span><b>World-class team, fully remote</b><p>People on a mission, working from anywhere. US EST hours.</p></span></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <span class="eyebrow">Read this before applying</span>
+    <h2>This is not an entry-level role</h2>
+    <p class="lede">Our leads are too valuable to hand to someone still learning. Do not apply if:</p>
+    <ul class="no-list">
+      <li><span class="x">✕</span><span><b>You've never done high-ticket one-call closing.</b> This isn't the place to learn.</span></li>
+      <li><span class="x">✕</span><span><b>You've only sold B2B.</b> This is B2C transformation selling — emotion, pain, urgency.</span></li>
+      <li><span class="x">✕</span><span><b>You can't show your numbers.</b> Vague answers end the conversation.</span></li>
+      <li><span class="x">✕</span><span><b>You want a side hustle.</b> Your dream offer deserves full-time commitment.</span></li>
+    </ul>
+    <div class="bar"><b>Still here?</b> Good. Proven closers with receipts just found the offer everyone's looking for.</div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow">We hire in small cohorts</span>
+    <h2>Prove you're an all-star</h2>
+    <p class="lede">2-minute application. Real numbers get fast responses.</p>
+    <a class="btn" href="#" onclick="openModal();return false">Apply Now</a>
+    <span class="btn-sub">Fully remote · Warm inbound only · Uncapped commission</span>
+  </div>
+</section>
+
+<footer><div class="wrap">Next Level Systems · <a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></div></footer>
+
+<div class="sticky">
+  <div class="wrap">
+    <span>Now hiring: High-ticket closer · Remote · Uncapped</span>
+    <a class="btn" href="#" onclick="openModal();return false">Apply Now</a>
+  </div>
+</div>
+
+<div class="overlay" id="overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mtitle">
+    <button class="close" onclick="closeModal()" aria-label="Close">×</button>
+    <form id="appform" onsubmit="return submitApp(event)">
+      <h3 id="mtitle">Show us your numbers</h3>
+      <p class="mh">10 quick fields. Every one required.</p>
+      <div class="progress"><i id="pbar"></i></div>
+      <span class="step">Step 1 · Your track record</span>
+
+      <div class="field"><label>Full name <span class="req">*</span><input type="text" name="name" required placeholder="Enter your full name"></label></div>
+      <div class="field"><label>Phone <span class="req">*</span><input type="tel" name="phone" required placeholder="+1 (555) 000-0000"></label></div>
+      <div class="field"><label>Email <span class="req">*</span><input type="email" name="email" required placeholder="your@email.com"></label></div>
+
+      <div class="field"><label>Experience in high-ticket one-call closing? <span class="req">*</span></label>
+        <div class="radio-row"><label><input type="radio" name="one_call" value="Yes" required>Yes</label><label><input type="radio" name="one_call" value="No">No</label></div></div>
+      <div class="field"><label>Experience with transformation selling? (B2C, emotional, pain/urgency) <span class="req">*</span></label>
+        <div class="radio-row"><label><input type="radio" name="transformation" value="Yes" required>Yes</label><label><input type="radio" name="transformation" value="No">No</label></div></div>
+      <div class="field"><label>If this is your dream offer, can you go full-time? <span class="req">*</span></label>
+        <div class="radio-row"><label><input type="radio" name="fulltime" value="Yes" required>Yes</label><label><input type="radio" name="fulltime" value="No">No</label></div></div>
+      <div class="field"><label>Comfortable working US EST timezone? <span class="req">*</span></label>
+        <div class="radio-row"><label><input type="radio" name="est" value="Yes" required>Yes</label><label><input type="radio" name="est" value="No">No</label></div></div>
+
+      <div class="field"><label>Total revenue closed in the last 12 months? <span class="req">*</span></label>
+        <div class="money"><input type="text" name="revenue_12mo" required inputmode="numeric"></div></div>
+      <div class="field"><label>Average sale price on your current/last offer? <span class="req">*</span></label>
+        <div class="money"><input type="text" name="avg_sale" required inputmode="numeric"></div></div>
+      <div class="field"><label>Cash collected in your best month? <span class="req">*</span></label>
+        <div class="money"><input type="text" name="best_cash" required inputmode="numeric"></div></div>
+      <div class="field"><label>Commissions earned in your best month? <span class="req">*</span></label>
+        <div class="money"><input type="text" name="best_commission" required inputmode="numeric"></div></div>
+
+      <button class="btn" type="submit">Submit Application</button>
+      <p class="fine">Top applicants hear back within 48 hours.</p>
+    </form>
+    <div class="success" id="success">
+      <h3>Application received</h3>
+      <p>If your numbers stack up, we'll reach out within 48 hours to book your interview. Watch your phone and inbox.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleTheme(){
+  var r=document.documentElement;
+  var light=r.getAttribute('data-theme')==='light';
+  if(light){r.removeAttribute('data-theme')}else{r.setAttribute('data-theme','light')}
+  document.getElementById('tbtn').textContent=light?'☀ Light':'☾ Dark';
+  try{localStorage.setItem('nls-theme',light?'dark':'light')}catch(e){}
+}
+try{
+  if(localStorage.getItem('nls-theme')==='light'){
+    document.documentElement.setAttribute('data-theme','light');
+    document.addEventListener('DOMContentLoaded',function(){document.getElementById('tbtn').textContent='☾ Dark'});
+  }
+}catch(e){}
+
+function openModal(){document.getElementById('overlay').classList.add('open');document.body.style.overflow='hidden'}
+function closeModal(){document.getElementById('overlay').classList.remove('open');document.body.style.overflow=''}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()})
+
+var form=document.getElementById('appform');
+function updateProgress(){
+  var names=['name','phone','email','one_call','transformation','fulltime','est','revenue_12mo','avg_sale','best_cash','best_commission'];
+  var done=0;
+  names.forEach(function(n){
+    var el=form.elements[n];
+    if(!el)return;
+    if(el.type==='text'||el.type==='tel'||el.type==='email'){if(el.value.trim())done++}
+    else if(el.value)done++;
+  });
+  document.getElementById('pbar').style.width=Math.max(8,Math.round(done/names.length*100))+'%';
+}
+form.addEventListener('input',updateProgress);
+form.addEventListener('change',updateProgress);
+
+function submitApp(e){
+  e.preventDefault();
+  // TODO: POST form data to your CRM / webhook endpoint here
+  var data=Object.fromEntries(new FormData(e.target).entries());
+  console.log('application',data);
+  document.getElementById('appform').style.display='none';
+  document.getElementById('success').style.display='block';
+  return false;
+}
+</script>
+
+</body></html>

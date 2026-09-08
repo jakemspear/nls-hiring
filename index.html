@@ -1,0 +1,126 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Careers — Next Level Systems</title>
+<meta name="description" content="Open roles at Next Level Systems. Fully remote, full-time, US EST hours for client calls.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap">
+<style>
+:root{
+  --ground:#07080A; --surface:#0E1114; --surface-2:#141A1F;
+  --line:#1A2026;
+  --text:#F2F5F3; --text-muted:#868F99;
+  --green:#2FD180; --green-hover:#26B96F; --green-ink:#04200F; --green-soft:#0E2518;
+  --blue:#2B3AC0;
+  --display:'DIN_Regular','DIN Next','Barlow','Roboto',Arial,sans-serif;
+  --body:'DIN_Regular','DIN Next','Barlow','Roboto',Arial,sans-serif;
+  --radius:12px; --radius-lg:18px; --radius-pill:99px;
+  --btn-shadow:0 0 0 1px rgba(47,209,128,.25),0 8px 34px rgba(47,209,128,.28);
+}
+:root[data-theme="light"]{
+  --ground:#F4F7F5; --surface:#FFFFFF; --surface-2:#F0F4F1;
+  --line:#DFE6E2;
+  --text:#0B1410; --text-muted:#5A6862;
+  --green:#127A48; --green-hover:#0E6339; --green-ink:#FFFFFF; --green-soft:#E2F2E9;
+  --btn-shadow:0 6px 24px rgba(18,122,72,.22);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ground);color:var(--text);font-family:var(--body);font-size:19px;line-height:1.6;letter-spacing:-.005em;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s;min-height:100vh;display:flex;flex-direction:column}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.015em;line-height:1.1;text-wrap:balance}
+h1{font-weight:800;letter-spacing:-.03em;line-height:1.16}
+h3{font-weight:600}
+a{color:var(--green)}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px;width:100%}
+
+.topbar{padding:16px 0;display:flex;align-items:center;justify-content:center;gap:14px;font-weight:600;letter-spacing:.14em;font-size:12.5px;text-transform:uppercase;color:var(--text-muted);position:relative}
+.topbar .logo{width:26px;height:26px;border-radius:7px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:-.03em}
+.themebtn{position:absolute;right:24px;top:12px;font-family:var(--body);font-weight:600;font-size:12.5px;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-pill);padding:7px 14px;cursor:pointer}
+.themebtn:hover{border-color:var(--green)}
+@media(max-width:640px){.themebtn{display:none}}
+
+.hero{padding:104px 0 40px;text-align:center;position:relative;overflow:hidden;flex:1}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(700px 380px at 50% -14%,rgba(47,209,128,.07),transparent 72%);pointer-events:none}
+:root[data-theme="light"] .hero::after{background:none}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{display:inline-block;font-weight:600;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--green);background:var(--green-soft);padding:6px 14px;border-radius:var(--radius-pill);margin-bottom:26px}
+h1{font-size:clamp(34px,5.2vw,52px);margin:0 auto 24px;max-width:16em}
+.lede{font-size:clamp(17px,2.1vw,21px);color:var(--text-muted);max-width:33em;margin:0 auto}
+
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px;text-align:left}
+@media(max-width:760px){.roles{grid-template-columns:1fr}}
+.role-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:36px 34px;display:flex;flex-direction:column;gap:12px;
+}
+.role-card .meta{font-size:14px;color:var(--text-muted);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.role-card h3{font-size:24px;letter-spacing:-.02em;font-weight:700}
+.role-card p{color:var(--text-muted);font-size:16.5px}
+.btn{
+  display:inline-block;font-family:var(--body);font-weight:600;font-size:16px;
+  text-transform:uppercase;letter-spacing:.08em;
+  background:var(--green);color:var(--green-ink);padding:18px 32px;
+  border:none;border-radius:var(--radius);cursor:pointer;text-decoration:none;text-align:center;
+  box-shadow:var(--btn-shadow);transition:background .15s,transform .15s;margin-top:auto;
+}
+.btn:hover{background:var(--green-hover);transform:translateY(-2px)}
+
+footer{padding:56px 0 48px;text-align:center;color:var(--text-muted);font-size:15px}
+footer a{color:var(--text-muted);text-decoration:none}
+footer a:hover{color:var(--green)}
+footer .legal{margin-top:14px;font-size:14px}
+</style>
+</head><body>
+
+<div class="topbar">
+  <span class="logo">NLS</span>
+  Next Level Systems · Careers
+  <button class="themebtn" id="tbtn" onclick="toggleTheme()">☀ Light</button>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Careers</span>
+    <h1>We hire in small cohorts</h1>
+    <p class="lede">Fully remote, full-time, US EST hours for client calls. We hire for judgment and real client outcomes — not for who's in a chair.</p>
+    <div class="roles">
+      <div class="role-card">
+        <span class="meta">Open · Full-time · Remote</span>
+        <h3>Transformation Coach</h3>
+        <p>Run 1:1 and group coaching for entrepreneurs with ADHD. Experienced coaches only — clients arrive already bought in.</p>
+        <a class="btn" href="/coach/">See the role</a>
+      </div>
+      <div class="role-card">
+        <span class="meta">Open · Full-time · Remote</span>
+        <h3>Closer</h3>
+        <p>Take booked calls with owners who already know the work and want the help. Uncapped commissions on every deal you close.</p>
+        <a class="btn" href="/closer/">See the role</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<footer>
+  <div class="wrap">
+    <a href="mailto:Support@nextlevelsystems.co">Support@nextlevelsystems.co</a>
+    <div class="legal">© 2026 Next Level Systems LLC</div>
+  </div>
+</footer>
+
+<script>
+function toggleTheme(){
+  var r=document.documentElement;
+  var light=r.getAttribute('data-theme')==='light';
+  if(light){r.removeAttribute('data-theme')}else{r.setAttribute('data-theme','light')}
+  document.getElementById('tbtn').textContent=light?'☀ Light':'☾ Dark';
+  try{localStorage.setItem('nls-theme',light?'dark':'light')}catch(e){}
+}
+try{
+  if(localStorage.getItem('nls-theme')==='light'){
+    document.documentElement.setAttribute('data-theme','light');
+    document.addEventListener('DOMContentLoaded',function(){document.getElementById('tbtn').textContent='☾ Dark'});
+  }
+}catch(e){}
+</script>
+
+</body></html>
